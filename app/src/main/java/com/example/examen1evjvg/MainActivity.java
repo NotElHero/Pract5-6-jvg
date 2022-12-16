@@ -109,15 +109,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         selectedOrigen = monedasOrigen.getCheckedRadioButtonId();
         if (selectedOrigen == R.id.radioEuroOrigen){
             seleccionOrigen = " euros son ";
+            cantidad.setHint("Euros");
         }
         if (selectedOrigen == R.id.radioDolarOrigen){
             seleccionOrigen = " dólares son ";
+            cantidad.setHint("Dólares");
         }
         if (selectedOrigen == R.id.radioBitcoinOrigen){
             seleccionOrigen = " bitcoins son ";
+            cantidad.setHint("Bitcoins");
         }
         if (selectedOrigen == 0){
             seleccionOrigen = "";
+            cantidad.setHint("Importe");
         }
         return seleccionOrigen;
     }
