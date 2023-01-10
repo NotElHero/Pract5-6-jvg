@@ -106,10 +106,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return seleccionDestino;
     }
     public String seleccionesOrigen(){
+        String hint;
         selectedOrigen = monedasOrigen.getCheckedRadioButtonId();
         if (selectedOrigen == R.id.radioEuroOrigen){
             seleccionOrigen = " euros son ";
-            cantidad.setHint("Euros");
+            hint = "Euros";
         }
         if (selectedOrigen == R.id.radioDolarOrigen){
             seleccionOrigen = " dólares son ";
